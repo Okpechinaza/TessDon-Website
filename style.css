@@ -18,7 +18,9 @@ p{
   font-family:cursive;
   line-height: 30px;
 }
-
+ main{
+  background-image: url(images/header\ image.jpg);
+ }
 
 
  .text-container{
@@ -34,14 +36,18 @@ span{
   /* home styles */
 #countdown{
   position: absolute;
-  top: 25%; /* Adjust the position */
+  top: 40%; /* Adjust the position */
   left: 50%; /* Adjust the position */
   transform: translate(-50%, -50%); /* Center text perfectly */
   color: #410364e8;
+  border-radius: 2px solid purple;
+  border: 2px;
+
 }
 .image-container {
   position: relative;
   text-align: center;
+  max-height: 50%;
 }
 .image-text{
   position: absolute;
@@ -53,6 +59,16 @@ span{
   font-size: 20px;
   }
 
+  .image-text-copyright{
+    position: absolute;
+    top: 95%; /* Adjust the position */
+    left: 50%; /* Adjust the position */
+    transform: translate(-50%, -50%); /* Center text perfectly */
+    color:#410364e8;
+    font-family: fantasy;
+    font-size: 20px;
+    }
+  
 
 /* registery style */
 
@@ -60,3 +76,6 @@ span{
   width: 100%;
   height: 400px;
 }
+
+
+

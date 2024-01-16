@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Okpe Chinaza Favour">
   <meta name="description" content="All about Theresa and Donovan 2024">
@@ -13,11 +13,46 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
   <link rel="stylesheet" href="style.css">
+  <style>
+    .image-text-step{
+  position: absolute;
+  top: 5%; /* Adjust the position */
+  left: 50%; /* Adjust the position */
+  transform: translate(-50%, -50%); /* Center text perfectly */
+  color:#410364e8;
+  font-family: fantasy;
+  font-size: 100px;
+  }
+  .static-image{
+height: 100%; 
+width: 100%; 
+position: fixed;
+top: 0;
+left: 0;
+z-index: 1000;
+overflow: hidden;
+}
+
+main{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+
+.static-image img {
+width: 100%;
+height: auto; 
+display: block;
+}
+
+  </style>
 </head>
+
 
 <body>
   <header>
-    <!-- navbar -->
+    <!-- navbar
     <div class="navbar-fixed">
       <nav class="white">
         <div class="nav-wrapper">
@@ -33,62 +68,50 @@
         </div>
       </nav>
     </div>
-    <!-- sidenav -->
-    <ul class="sidenav" id="sidenav">
+    sidenav -->
+    <!-- <ul class="sidenav" id="sidenav">
       <li><a class="purple-text text-darken-1 font" href="#index.html">Home</a></li>
       <li><a class="purple-text text-darken-1 font" href="#our-story">Our Story</a></li>
       <li><a class="purple-text text-darken-1 font" href="Gallery.html">Gallery</a></li>
       <li><a class="purple-text text-darken-1 font" href="Registery.html">Registery</a></li>
-    </ul>
+    </ul>  -->
   </header>
 
   <!-- main section -->
   <main>
     <!-- header-image and javascript -->
-    <section>
-      <div class="image-container">
-        <img src="images/header image.jpg" alt="a table set in wedding style with flowers and wine cup" class="responsive-img" style="width: 100%; height: 100%;">
-        <div class="image-text">CountDown To Our Big Day With Us!!!!!
-      </div>
+    <div>
+      <div class="static-image">
+        <img src="images/header-image.jpg" alt="a table set in wedding style with flowers and wine cup" class="image">
+
+        <h2 id="personal" class="image-text-step">TessyxDon</h2>
       <div id="countdown">
         <p id="days">days:</p>
         <p id="hours">hours:</p>
         <p id="minutes">minutes:</p>
-        <p id="seconds">seconds:</p>
+        <p id="seconds">seconds:</p> 
       </div>
-    </section>
-    <!-- our story including video -->
-    <section class=" container our-story" id="our-story">
-      <div class="story center ">
-        <h4 class="center purple darken-1 white-text" style="color: #410364e8;;">Our Story
-        </h4>
-        <video width="320" height="240" controls loop>
-          <source src="https://www.dropbox.com/scl/fi/0vyut0jtzwp41u4ja8s24/TessyxDon-ourstory.mp4?rlkey=v3dhalftll9hhrbno4ct7ajn8&dl=0" type="video/mp4">
-        </video>
-      </div>    
-    </section>
-  </main>
-
-
-
-
-
-
-
-
-
-
-
-<!-- footer -->
-
-  <footer class="page-footer white white-darken-4">
-    <div class="footer-copyright">
-      <div class="container">
-      <p class="purple-text text-darken-4 center" style="font-size: 15px;"> Copyright &#169;
-         2024 NAZA </p>
-      </div>
+      <div class="image-text-copyright container">
+        <p class="purple-text text-darken-4 center" style="font-size: 15px;"> Copyright &#169;
+           2024 NAZA </p>
+        </div>
     </div>
-  </footer>
+  </div>
+  </main>
+  <!-- our story including video
+  <section class=" container our-story" id="our-story">
+    <div class="story center ">
+      <h4 class="center purple darken-1 white-text" style="color: #410364e8;;">Our Story
+      </h4>
+      <video width="320" height="240" controls loop>
+        <source src="https://www.dropbox.com/scl/fi/0vyut0jtzwp41u4ja8s24/TessyxDon-ourstory.mp4?rlkey=v3dhalftll9hhrbno4ct7ajn8&dl=0" type="video/mp4">
+      </video>
+    </div>    
+  </section> -->
+
+
+
+
  <script src="countdown.js"></script>
   <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script>
