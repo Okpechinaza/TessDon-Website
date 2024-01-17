@@ -1,3 +1,11 @@
+@font-face {
+  font-family:Big-Shoulder-Display ;
+  src: url(fonts/Big-Shoulder-Display.ttf);
+}
+main p{
+  font-family: Big-Shoulder-Display!important;
+}
+
 /* general style */
 #personal{
   font-family: 'Dancing Script', cursive;
@@ -40,10 +48,11 @@ span{
   left: 50%; /* Adjust the position */
   transform: translate(-50%, -50%); /* Center text perfectly */
   color: #410364e8;
-  border-radius: 2px solid purple;
-  border: 2px;
-
+  background-color: white;
+  padding: 25px 200px;
+  border-radius: 50px;
 }
+
 .image-container {
   position: relative;
   text-align: center;
@@ -51,19 +60,19 @@ span{
 }
 .image-text{
   position: absolute;
-  top: 15%; /* Adjust the position */
-  left: 50%; /* Adjust the position */
-  transform: translate(-50%, -50%); /* Center text perfectly */
+  top: 15%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
   color:#410364e8;
   font-family: fantasy;
-  font-size: 20px;
+  font-size: 40px;
   }
 
   .image-text-copyright{
     position: absolute;
-    top: 95%; /* Adjust the position */
-    left: 50%; /* Adjust the position */
-    transform: translate(-50%, -50%); /* Center text perfectly */
+    top: 98%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
     color:#410364e8;
     font-family: fantasy;
     font-size: 20px;
