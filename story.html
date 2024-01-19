@@ -17,41 +17,11 @@
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
   <link rel="stylesheet" href="style.css">
   <style>
-    .big-shoulder{
-      font-family:'Big Shoulder Stencil Display', cursive;
+    video{
+      height: 100%;
+      width: 100%;
+      object-fit: fill;
     }
-    .image-text-step{
-  position: absolute;
-  top: 5%; /* Adjust the position */
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  color:#410364e8;
-  font-family: fantasy;
-  font-size: 120px;
-  }
-  .static-image{
-height: 100%; 
-width: 100%; 
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1000;
-overflow: hidden;
-}
-
-main{
-margin: 0;
-padding: 0;
-overflow-x: hidden;
-}
-
-
-.static-image img {
-width: 100%;
-height: auto; 
-display: block;
-}
-
   </style>
 </head>
 
@@ -69,59 +39,77 @@ display: block;
         <li><a href="Registery.html" class="btn-floating blue"><i class="material-icons">attach_file</i></a>Registery</li>
       </ul>
     </div>
-     
-    <!-- navbar
-    <div class="navbar-fixed">
-      <nav class="white">
-        <div class="nav-wrapper">
-          <a href="#sidenav" class="sidenav-trigger right">
-            <i class="material-icons purple-text text-darken-1">menu</i>
-          <a href="#" class="brand-logo purple-text text-darken-1" id="personal" style="color: #8a0ad4e8;">TessyxDon</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a class="purple-text text-darken-1 font"  href="#index.html">Home</a></li>
-            <li><a class="purple-text text-darken-1 font" href="#our-story" >Our Story</a></li>
-            <li><a class="purple-text text-darken-1 font" href="Gallery.html">Gallery</a></li>
-            <li><a class="purple-text text-darken-1 font" href="Registery.html">Registery</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    sidenav -->
-    <!-- <ul class="sidenav" id="sidenav">
-      <li><a class="purple-text text-darken-1 font" href="#index.html">Home</a></li>
-      <li><a class="purple-text text-darken-1 font" href="#our-story">Our Story</a></li>
-      <li><a class="purple-text text-darken-1 font" href="Gallery.html">Gallery</a></li>
-      <li><a class="purple-text text-darken-1 font" href="Registery.html">Registery</a></li>
-    </ul>  -->
   </header>
 
   <!-- main section -->
   <main>
-    <!-- header-image and javascript -->
-    <div>
-      <div class="static-image">
-        <img src="images/header-image.jpg" alt="a table set in wedding style with flowers and wine cup" class="image">
-        <h2 id="personal" class="image-text-step">TessyxDon</h2>
-      <div id="countdown">
-        <p id="days">days:</p>
-        <p id="hours">hours:</p>
-        <p id="minutes">minutes:</p>
-        <p id="seconds">seconds:</p> 
-      </div>
-
-      <button class="">Next page</button>
+  <video width="320" height="240" controls allowfullscreen  autoplay>
+      <source src="video/TessyxDon-ourstory (1) (1).mp4" type="video/mp4">
+      <source src="video/TessyxDon-ourstory (1) (1).mp4" type="video/ogg">
+  </video>
 
 
-<p>welcome</p>
-
-      <div class="image-text-copyright container">
+  <div class="image-text-copyright container">
         <p class="purple-text text-darken-4 center big-shoulder" style="font-size: 15px;"> Copyright &#169;
-           2024 NAZA </p>
+          2024 NAZA </p>
+          
         </div>
-    </div>
-  </div>
-  </main>
-  
+        <p>
+          <div class="row">
+            <div class="col s12 m3">
+              we have been inseparable friends for 
+    years. our friendship, rooted in shared
+    interests and mutual understanding,
+    evolved gradually, weaving a tapestry of
+    trust and camaraderie 
+    we navigated life’s 
+    paths independently,
+    unaware of the love that 
+    silently brewing amidst our
+    many banters and 
+    disagreements.
+    as time 
+    unfolded, a subtle shift 
+    occurred, we began to notice 
+    each other in a different light.
+    unspoken 
+    sentiments blossomed into a
+    profound love that silently 
+    grew within our hearts.
+    however, this affection we share faced a
+    formidable challenge-distance!
+    residing in different countries, we had
+    thought this was impossible.
+    tessy and i were committed and we made
+    considerable sacrifices to bridge the gap.
+    our love for each other 
+    fuelled our devotion and
+    unwavering faith in our
+    relationship leading us to this
+    pivotal moment – the decision 
+    to marry
+    the culmination of our journey,
+    our upcoming union stands as a 
+    testament that true stands the test of
+    time, or distance.
+    don and i stand united, ready to embark
+    on this new chapter of our lives.
+    we are grateful to you dear family and 
+    beloved friends for your unwavering 
+    support.
+    
+    
+    Tessy
+    &
+    Donovan 
+            </div>
+          </div>
+        </p>
+</main>
+
+
+
+<footer></footer>
  <script src="countdown.js"></script>
   <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script>
@@ -137,22 +125,3 @@ display: block;
 </script>
 </body>
 </html>
- 
-
-
-
-
-
-  
-  
-  <!-- our story including video
-  <section class=" container our-story" id="our-story">
-    <div class="story center ">
-      <h4 class="center purple darken-1 white-text" style="color: #410364e8;;">Our Story
-      </h4>
-      <video width="320" height="240" controls loop>
-        <source src="https://www.dropbox.com/scl/fi/0vyut0jtzwp41u4ja8s24/TessyxDon-ourstory.mp4?rlkey=v3dhalftll9hhrbno4ct7ajn8&dl=0" type="video/mp4">
-      </video>
-    </div>    
-  </section> -->
-

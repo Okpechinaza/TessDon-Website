@@ -17,107 +17,107 @@
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
   <link rel="stylesheet" href="style.css">
   <style>
-    .big-shoulder{
-      font-family:'Big Shoulder Stencil Display', cursive;
+    body{
+      background-image: url(images/header-image.jpg);
+      background-size:cover;
+      background-attachment: fixed;
+      text-align: center;
+      overflow: hidden;
     }
-    .image-text-step{
-  position: absolute;
-  top: 5%; /* Adjust the position */
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+    /* .background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('path/to/your/background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Move the background behind other elements */
+
+    #personal{
+  font-family: 'Dancing Script', cursive;
+  font-size: 80px;
   color:#410364e8;
-  font-family: fantasy;
-  font-size: 120px;
-  }
-  .static-image{
-height: 100%; 
-width: 100%; 
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1000;
-overflow: hidden;
+           } 
+
+#countdown p{
+ color:#410364e8;
+ font-size: 30px;
 }
 
-main{
-margin: 0;
-padding: 0;
-overflow-x: hidden;
+  /* frame */
+/* .frame{
+    position:absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    border:5px solid grey; 
+    border-radius: 50px;
+    margin: 200px;
+   } */
+
+   /* countdown style */
+#countdown{
+  color: #410364e8;
+  background-color: white;
+   margin: 50px 100px;
+   padding: 5px;
+   border-radius: 50px;
 }
 
+    /* button styles */
+    .page{
+      padding: 30px 50px;
+      border: 1px solid purple; 
+      border-radius: 50px;
+      font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    /* copyright style */
+    .image-text-copyright{
+    color:#410364e8;
+    font-family: fantasy;
+    font-size: 20px;
+    margin-top: 100px;
+    }
+  
 
-.static-image img {
-width: 100%;
-height: auto; 
-display: block;
-}
+
 
   </style>
 </head>
 
 
 <body>
-  <header>
-    <!-- <div class="fixed-action-btn">
-      <a class="btn-floating btn-large red">
-        <i class="large material-icons">mode_edit</i>
-      </a>
-      <ul>
-        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-      </ul>
-    </div> -->
-     
-    <!-- navbar
-    <div class="navbar-fixed">
-      <nav class="white">
-        <div class="nav-wrapper">
-          <a href="#sidenav" class="sidenav-trigger right">
-            <i class="material-icons purple-text text-darken-1">menu</i>
-          <a href="#" class="brand-logo purple-text text-darken-1" id="personal" style="color: #8a0ad4e8;">TessyxDon</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a class="purple-text text-darken-1 font"  href="#index.html">Home</a></li>
-            <li><a class="purple-text text-darken-1 font" href="#our-story" >Our Story</a></li>
-            <li><a class="purple-text text-darken-1 font" href="Gallery.html">Gallery</a></li>
-            <li><a class="purple-text text-darken-1 font" href="Registery.html">Registery</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-    sidenav -->
-    <!-- <ul class="sidenav" id="sidenav">
-      <li><a class="purple-text text-darken-1 font" href="#index.html">Home</a></li>
-      <li><a class="purple-text text-darken-1 font" href="#our-story">Our Story</a></li>
-      <li><a class="purple-text text-darken-1 font" href="Gallery.html">Gallery</a></li>
-      <li><a class="purple-text text-darken-1 font" href="Registery.html">Registery</a></li>
-    </ul>  -->
-  </header>
-
-  <!-- main section -->
   <main>
     <!-- header-image and javascript -->
-    <div>
-      <div class="static-image">
-        <img src="images/header-image.jpg" alt="a table set in wedding style with flowers and wine cup" class="image">
-        <h2 id="personal" class="image-text-step">TessyxDon</h2>
-      <div id="countdown">
-        <p id="days">days:</p>
-        <p id="hours">hours:</p>
-        <p id="minutes">minutes:</p>
-        <p id="seconds">seconds:</p> 
-      </div>
+  <div class="container">
+    <div class="frame z-depth-3">
+      <p class="center purple-text ">we are getting married!!!</p>
+      <h2 id="personal" class="center ">TessyxDon</h2>
+      <p class="center purple-text">FEB 17 2024</p>
       
-
-<p>welcome</p>
-
+          <div id="countdown">
+          <p id="days">days:</p>
+          <p id="hours">hours:</p>
+          <p id="minutes">minutes:</p>
+          <p id="seconds">seconds:</p> 
+           </div>
+      <div class="center">
+           <!-- <button
+           class="purple darken-2 z-depth-3 pulse page">Next page</button> -->
+          </div>
+           <a class="btn purple pulse z-depth-3 page"      href="story.html ">Next Page</a>
       <div class="image-text-copyright container">
-        <p class="purple-text text-darken-4 center big-shoulder" style="font-size: 15px;"> Copyright &#169;
-           2024 NAZA </p>
-        </div>
+           <p class="purple-text text-darken-4 center"> Copyright &#169;
+                      2024 NAZA </p>
+      </div>
     </div>
-  </div>
+ </div>
+
+
   </main>
 
  <script src="countdown.js"></script>
