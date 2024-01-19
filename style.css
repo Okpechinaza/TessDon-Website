@@ -7,12 +7,9 @@ main p{
 }
 
 /* general style */
-#personal{
-  font-family: 'Dancing Script', cursive;
-}
-.brand-logo{
+/* .brand-logo{
   margin-left: 100px;
-}
+} */
 #font1{
   font-family: fantasy;
   font-size: 15px;
@@ -26,58 +23,24 @@ p{
   font-family:cursive;
   line-height: 30px;
 }
- main{
-  background-image: url(images/header\ image.jpg);
- }
 
-
- .text-container{
-  
-  margin: 100px 100px;
-}  
 
 span{
   font-size: 10px;
   padding-bottom: 0px;
 } 
 
-  /* home styles */
-#countdown{
-  position: absolute;
-  top: 40%; /* Adjust the position */
-  left: 50%; /* Adjust the position */
-  transform: translate(-50%, -50%); /* Center text perfectly */
-  color: #410364e8;
-  background-color: white;
-  padding: 25px 200px;
-  border-radius: 50px;
-}
-
-.image-container {
+/* .image-container {
   position: relative;
   text-align: center;
   max-height: 50%;
 }
 .image-text{
-  position: absolute;
-  top: 15%;
-  left: 50%; 
-  transform: translate(-50%, -50%); 
   color:#410364e8;
   font-family: fantasy;
   font-size: 40px;
-  }
+  } */
 
-  .image-text-copyright{
-    position: absolute;
-    top: 98%; 
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    color:#410364e8;
-    font-family: fantasy;
-    font-size: 20px;
-    }
-  
 
 /* registery style */
 

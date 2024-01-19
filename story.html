@@ -55,20 +55,20 @@ display: block;
   </style>
 </head>
 
-
 <body>
   <header>
-    <!-- <div class="fixed-action-btn">
-      <a class="btn-floating btn-large red">
+    <!-- fab -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large purple">
         <i class="large material-icons">mode_edit</i>
       </a>
       <ul>
-        <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-        <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-        <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-        <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+        <li><a href="index.html"     class="btn-floating purple"><i class="material-icons">insert_chart</i></a>Home</li>
+        <li><a href="story.html"     class="btn-floating yellow darken-1" class="material-icons">format_quote</i></a>Our Story</li>
+        <li><a href="Gallery.html"   class="btn-floating purple"><i class="material-icons">publish</i></a>Gallery</li>
+        <li><a href="Registery.html" class="btn-floating blue"><i class="material-icons">attach_file</i></a>Registery</li>
       </ul>
-    </div> -->
+    </div>
      
     <!-- navbar
     <div class="navbar-fixed">
@@ -108,7 +108,9 @@ display: block;
         <p id="minutes">minutes:</p>
         <p id="seconds">seconds:</p> 
       </div>
-      
+
+      <button class="">Next page</button>
+
 
 <p>welcome</p>
 
@@ -119,7 +121,7 @@ display: block;
     </div>
   </div>
   </main>
-
+  
  <script src="countdown.js"></script>
   <script src="js/jquery.js"></script>
 <script src="js/materialize.js"></script>
@@ -129,7 +131,9 @@ display: block;
     $('.materialboxed').materialbox();
     $('.parallax').parallax();
     $('.sidenav').sidenav();
-   })
+    $('.fixed-action-btn').floatingActionButton();
+
+   });
 </script>
 </body>
 </html>
@@ -137,4 +141,18 @@ display: block;
 
 
 
+
+
+  
+  
+  <!-- our story including video
+  <section class=" container our-story" id="our-story">
+    <div class="story center ">
+      <h4 class="center purple darken-1 white-text" style="color: #410364e8;;">Our Story
+      </h4>
+      <video width="320" height="240" controls loop>
+        <source src="https://www.dropbox.com/scl/fi/0vyut0jtzwp41u4ja8s24/TessyxDon-ourstory.mp4?rlkey=v3dhalftll9hhrbno4ct7ajn8&dl=0" type="video/mp4">
+      </video>
+    </div>    
+  </section> -->
 

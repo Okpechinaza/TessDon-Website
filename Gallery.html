@@ -18,8 +18,20 @@
 
 <body>
   <header>
-    <!-- navbar -->
-    <div class="navbar-fixed">
+    <!-- fab -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large purple">
+        <i class="large material-icons">mode_edit</i>
+      </a>
+      <ul>
+        <li><a href="index.html"     class="btn-floating purple"><i class="material-icons">insert_chart</i></a>Home</li>
+        <li><a href="story.html"     class="btn-floating yellow darken-1" class="material-icons">format_quote</i></a>Our Story</li>
+        <li><a href="Gallery.html"   class="btn-floating purple"><i class="material-icons">publish</i></a>Gallery</li>
+        <li><a href="Registery.html" class="btn-floating blue"><i class="material-icons">attach_file</i></a>Registery</li>
+      </ul>
+    </div>
+
+    <!-- <div class="navbar-fixed">
       <nav class="white">
         <div class="nav-wrapper">
           <a href="#sidenav" class="sidenav-trigger right">
@@ -33,7 +45,7 @@
           </ul>
         </div>
       </nav>
-    </div>
+    </div> -->
 
        <!-- sidenav -->
     <ul class="sidenav" id="sidenav">
@@ -116,7 +128,9 @@
    $('.materialboxed').materialbox();
    $('.parallax').parallax();
    $('.sidenav').sidenav();
-  })
+   $('.fixed-action-btn').floatingActionButton();
+
+  });
 </script>
 
 </body>

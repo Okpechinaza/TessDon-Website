@@ -14,12 +14,30 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
   <link rel="stylesheet" href="style.css">
+  <style>
+
+  </style>
 </head>
 
 <body>
   <header>
+    <!-- fab -->
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large purple">
+        <i class="large material-icons">mode_edit</i>Home
+      </a>
+      <ul>
+        <li><a href="index.html"     class="btn-floating purple"><i class="material-icons">insert_chart</i></a>Home</li>
+        <li><a href="story.html"     class="btn-floating yellow darken-1" class="material-icons">format_quote</i></a>Our Story</li>
+        <li><a href="Gallery.html"   class="btn-floating purple"><i class="material-icons">publish</i></a>Gallery</li>
+        <li><a href="Registery.html" class="btn-floating blue"><i class="material-icons">attach_file</i></a>Registery</li>
+        
+      </ul>
+    </div>
+    
     <!-- navbar -->
-    <div class="navbar-fixed">
+    <!-- <div class="navbar-fixed">
+    }
       <nav class="white">
         <div class="nav-wrapper">
           <a href="#sidenav" class="sidenav-trigger right">
@@ -33,14 +51,14 @@
           </ul>
         </div>
       </nav>
-    </div>
+    </div> -->
        <!-- sidenav -->
-    <ul class="sidenav" id="sidenav">
+    <!-- <ul class="sidenav" id="sidenav">
       <li><a class="purple-text text-darken-1 font" href="index.html">Home</a></li>
       <li><a class="purple-text text-darken-1 font" href="#our-story">Our Story</a></li>
       <li><a class="purple-text text-darken-1 font" href="Gallery.html">Gallery</a></li>
       <li><a class="purple-text text-darken-1 font" href="Registery.html">Registery</a></li>
-    </ul>
+    </ul> -->
   </header>
 
   
@@ -148,7 +166,6 @@
      <hr>
 
 
-
     <!-- map -->
     
     <div class="map-container">
@@ -157,6 +174,7 @@
       </p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15756.407769239897!2d7.341209630688477!3d9.145265200000017!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104dd988d0fc2eb1%3A0x30ef12f0433ddda7!2sNICE%20ROYAL%20HOTEL!5e0!3m2!1sen!2sng!4v1705504619435!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
+    
   </main>
 
 
@@ -183,7 +201,8 @@
       $('.materialboxed').materialbox();
       $('.parallax').parallax();
       $('.sidenav').sidenav();
-      })
+      $('.fixed-action-btn').floatingActionButton();
+  });
   </script>
 </body>
 </html>
