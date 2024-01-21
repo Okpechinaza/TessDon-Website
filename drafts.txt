@@ -1,0 +1,28 @@
+<main>
+    <!-- header-image and javascript -->
+  <div class="container">
+    <div class="frame z-depth-3">
+      <p class="center purple-text ">we are getting married!!!</p>
+      <h2 id="personal" class="center ">TessyxDon</h2>
+      <p class="center purple-text">FEB 17 2024</p>
+      
+          <div id="countdown">
+          <p id="days">days:</p>
+          <p id="hours">hours:</p>
+          <p id="minutes">minutes:</p>
+          <p id="seconds">seconds:</p> 
+           </div>
+      <div class="center">
+           <!-- <button
+           class="purple darken-2 z-depth-3 pulse page">Next page</button> -->
+          </div>
+           <a class="btn purple pulse z-depth-3 page"      href="story.html ">Next Page</a>
+      <div class="image-text-copyright container">
+           <p class="purple-text text-darken-4 center"> Copyright &#169;
+                      2024 NAZA </p>
+      </div>
+    </div>
+ </div>
+
+
+  </main>

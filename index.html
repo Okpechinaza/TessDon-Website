@@ -11,56 +11,62 @@
   <link rel="stylesheet" href="css/materialize.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body{
-      background-image: url(images/header-image.jpg);
-      background-size:cover;
-      background-attachment: fixed;
-      text-align: center;
-      overflow: hidden;
-    }
-
-    #personal{
-      font-family: 'Dancing Script', cursive;
-      font-size: 80px;
-      color:#410364e8;
-    } 
-
-    #countdown p{
-    color:#410364e8;
-    font-size: 30px;
-    }
-
-    #countdown{
-      color: #410364e8;
-      background-color: white;
-      margin: 50px 100px;
-      padding: 5px;
-      border-radius: 50px;
-    }
-
-    .page{
-      padding: 30px 50px;
-      border: 1px solid purple; 
-      border-radius: 50px;
-      font-size: 20px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-
-    .image-text-copyright{
-    color:#410364e8;
-    font-family: fantasy;
-    font-size: 20px;
-    margin-top: 100px;
-    }
+  
 
   </style>
 </head>
 
 
-<body>
+<body style="background-image: url('images/bg-image.jpg');">
+  <section class="section container">
+    <div class="container center-align center">
+      <!-- Countdown -->
+      <div class="row">
+        <div class="col s3">
+          <span class="days" id="day"></span>
+          <br>
+          <span>Days</span>
+        </div>
+        <div class="col s3">
+          <span class="hours" id="hour"></span> 
+          <br>
+          <span>Hours</span>
+        </div>
+        <div class="col s3">
+          <span class="minutes" id="minute"></span>
+          <br>
+          <span>Minutes</span>
+        </div>
+        <div class="col s3">
+          <span class="seconds" id="second"></span>
+          <br>
+          <span>Seconds</span>
+        </div>
+      </div>
+      <!-- Tessy & Don Main Text -->
+      <div class="container center center-align">
+        <span>Tessy</span>
+        <br>
+        <span>&</span>
+        <br>
+        <span>Don</span>
+      </div>
+      <!-- Date & Venue -->
+      <div class="row">
+        <div class="col s12 l6">
+          <span>February 27, 2024</span>
+        </div>
+        <div class="col s12 l6">
+          <span>Kilimanjaro Eatery, Kubwa</span>
+        </div>
+      </div>
+      <!-- Copyright -->
+      <div class="container center-align center">
+        <p>Copyright 2024 NAZA</p>
+      </div>
+    </div>
+  </section>
+  
   
   <script src="countdown.js"></script>
   <script src="js/jquery.js"></script>

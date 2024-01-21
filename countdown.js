@@ -1,30 +1,36 @@
-const weddingDate = new Date('2024-02-17T00:00:00');
+//Create Deadline
+let deadline = new Date("February 17, 2024 0:00:00").getTime(); 
 
-function updateCountdown() {
-  const now = new Date();
-  const timeDiff = weddingDate - now;
+//Set Interval
+let x = setInterval(function() { 
 
-  if (timeDiff <= 0) {
-    // Wedding date has passed
-    document.getElementById('countdown').innerHTML = "<p>countdown to our wedding</p>";
-  } else {
-    // Calculate remaining time
-    const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+	//Get today's date
+	let now = new Date().getTime();
+	//Duration
+	let t = deadline - now;
+	//Days remaining
+	let days = Math.floor(t / (1000 * 60 * 60 * 24)); 
+	//Hours remaining
+	let hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
+	//Minutes remaining
+	let minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
+	//Seconds remaining
+	let seconds = Math.floor((t % (1000 * 60)) / 1000);
 
-    // Display countdown
-    document.getElementById('countdown').innerHTML = `<p>${days} days ${hours} hours ${minutes} minutes ${seconds} seconds</p>`;
-    document.getElementById('days').innerText += days;
-    document.getElementById('hours').innerText += hours;
-    document.getElementById('minutes').innerText += minutes;
-    document.getElementById('seconds').innerText += seconds;
-  }
-}
+	//Output to HTML
+	document.getElementById("day").innerHTML =days ; 
+	document.getElementById("hour").innerHTML =hours; 
+	document.getElementById("minute").innerHTML = minutes; 
+	document.getElementById("second").innerHTML =seconds;
 
-// Update countdown every second
-setInterval(updateCountdown, 1000);
+	//After Period Elapses
+	if (t < 0) { 
+			clearInterval(x); 
+			document.getElementById("demo").innerHTML = "TIME UP"; 
+			document.getElementById("day").innerHTML ='0'; 
+			document.getElementById("hour").innerHTML ='0'; 
+			document.getElementById("minute").innerHTML ='0' ; 
+			document.getElementById("second").innerHTML = '0'; 
+	};
 
-// Initial call to display countdown immediately
-updateCountdown();
+}, 1000); 
