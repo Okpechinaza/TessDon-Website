@@ -10,10 +10,6 @@
   <title>TessFerguson2024/Home</title>
   <link rel="stylesheet" href="css/materialize.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- dancing script font -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
-  <!-- big shoulder font -->
-
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
   <link rel="stylesheet" href="style.css">
   <style>
@@ -24,49 +20,26 @@
       text-align: center;
       overflow: hidden;
     }
-    /* .background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('path/to/your/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* Move the background behind other elements */
 
     #personal{
-  font-family: 'Dancing Script', cursive;
-  font-size: 80px;
-  color:#410364e8;
-           } 
+      font-family: 'Dancing Script', cursive;
+      font-size: 80px;
+      color:#410364e8;
+    } 
 
-#countdown p{
- color:#410364e8;
- font-size: 30px;
-}
+    #countdown p{
+    color:#410364e8;
+    font-size: 30px;
+    }
 
-  /* frame */
-/* .frame{
-    position:absolute;
-    top: 60%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    border:5px solid grey; 
-    border-radius: 50px;
-    margin: 200px;
-   } */
+    #countdown{
+      color: #410364e8;
+      background-color: white;
+      margin: 50px 100px;
+      padding: 5px;
+      border-radius: 50px;
+    }
 
-   /* countdown style */
-#countdown{
-  color: #410364e8;
-  background-color: white;
-   margin: 50px 100px;
-   padding: 5px;
-   border-radius: 50px;
-}
-
-    /* button styles */
     .page{
       padding: 30px 50px;
       border: 1px solid purple; 
@@ -75,62 +48,33 @@
       margin-top: 50px;
       margin-bottom: 50px;
     }
-    /* copyright style */
+
     .image-text-copyright{
     color:#410364e8;
     font-family: fantasy;
     font-size: 20px;
     margin-top: 100px;
     }
-  
-
-
 
   </style>
 </head>
 
 
 <body>
-  <main>
-    <!-- header-image and javascript -->
-  <div class="container">
-    <div class="frame z-depth-3">
-      <p class="center purple-text ">we are getting married!!!</p>
-      <h2 id="personal" class="center ">TessyxDon</h2>
-      <p class="center purple-text">FEB 17 2024</p>
-      
-          <div id="countdown">
-          <p id="days">days:</p>
-          <p id="hours">hours:</p>
-          <p id="minutes">minutes:</p>
-          <p id="seconds">seconds:</p> 
-           </div>
-      <div class="center">
-           <!-- <button
-           class="purple darken-2 z-depth-3 pulse page">Next page</button> -->
-          </div>
-           <a class="btn purple pulse z-depth-3 page"      href="story.html ">Next Page</a>
-      <div class="image-text-copyright container">
-           <p class="purple-text text-darken-4 center"> Copyright &#169;
-                      2024 NAZA </p>
-      </div>
-    </div>
- </div>
-
-
-  </main>
-
- <script src="countdown.js"></script>
+  
+  <script src="countdown.js"></script>
   <script src="js/jquery.js"></script>
-<script src="js/materialize.js"></script>
-<script>
-     $(document).ready(function(){
-    $('.collapsible').collapsible();
-    $('.materialboxed').materialbox();
-    $('.parallax').parallax();
-    $('.sidenav').sidenav();
-   })
-</script>
+  <script src="js/materialize.js"></script>
+  <script>
+      $(document).ready(function(){
+
+      $('.collapsible').collapsible();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.sidenav').sidenav();
+      
+    })
+  </script>
 </body>
 </html>
  
