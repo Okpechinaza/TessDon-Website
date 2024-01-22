@@ -10,127 +10,118 @@
   <title>TessFerguson2024/Home</title>
   <link rel="stylesheet" href="css/materialize.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- dancing script font -->
+  <!-- Dancing Script Font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
-  <!-- big shoulder font -->
-
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
-  <link rel="stylesheet" href="style.css">
-  <style>
-    body{
-      background-image: url(images/header-image.jpg);
-      background-size:cover;
-      background-attachment: fixed;
-      text-align: center;
-      overflow: hidden;
-    }
-    /* .background-image {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url('path/to/your/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    z-index: -1; /* Move the background behind other elements */
-
-    #personal{
-  font-family: 'Dancing Script', cursive;
-  font-size: 80px;
-  color:#410364e8;
-           } 
-
-#countdown p{
- color:#410364e8;
- font-size: 30px;
-}
-
-  /* frame */
-/* .frame{
-    position:absolute;
-    top: 60%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    border:5px solid grey; 
-    border-radius: 50px;
-    margin: 200px;
-   } */
-
-   /* countdown style */
-#countdown{
-  color: #410364e8;
-  background-color: white;
-   margin: 50px 100px;
-   padding: 5px;
-   border-radius: 50px;
-}
-
-    /* button styles */
-    .page{
-      padding: 30px 50px;
-      border: 1px solid purple; 
-      border-radius: 50px;
-      font-size: 20px;
-      margin-top: 50px;
-      margin-bottom: 50px;
-    }
-    /* copyright style */
-    .image-text-copyright{
-    color:#410364e8;
-    font-family: fantasy;
-    font-size: 20px;
-    margin-top: 100px;
-    }
   
+  <style>
+    .push-from-top {
+      margin-top: 5vh !important;
+      padding: 1vh !important;
+    }
 
+    .cursive-text {
+      font-family: 'Dancing Script', cursive;
+    }
 
+    .bold-text {
+      font-weight: bold !important;
+    }
 
+    .text-l {
+      font-size: 2rem;
+    }
+    .text-xl {
+      font-size: 3rem;
+    }
+
+    .rounded-edges-x {
+      border-radius: 30px !important;
+    }
+
+    .rounded-edges-xl {
+      border-radius: 60px !important;
+    }
+
+    .main-border {
+      border: 2px solid #9c27b0;
+    }
   </style>
 </head>
 
 
-<body>
-  <main>
-    <!-- header-image and javascript -->
-  <div class="container">
-    <div class="frame z-depth-3">
-      <p class="center purple-text ">we are getting married!!!</p>
-      <h2 id="personal" class="center ">TessyxDon</h2>
-      <p class="center purple-text">FEB 17 2024</p>
-      
-          <div id="countdown">
-          <p id="days">days:</p>
-          <p id="hours">hours:</p>
-          <p id="minutes">minutes:</p>
-          <p id="seconds">seconds:</p> 
-           </div>
-      <div class="center">
-           <!-- <button
-           class="purple darken-2 z-depth-3 pulse page">Next page</button> -->
-          </div>
-           <a class="btn purple pulse z-depth-3 page"      href="story.html ">Next Page</a>
-      <div class="image-text-copyright container">
-           <p class="purple-text text-darken-4 center"> Copyright &#169;
-                      2024 NAZA </p>
+<body style="background-image: url('images/bg-image.jpg');">
+  <section class="section container push-from-top purple-text white z-depth-4">
+    <div class="container center-align center">
+      <!-- Welcome Text -->
+      <div>
+        <p class="cursive-text text-l">Our Special Day!! </p>
+      </div>
+      <!-- Countdown -->
+      <div class="row center center-align center-block">
+        <div class="col s2 push-s2">
+          <span class="days bold-text" id="day"></span>
+          <br>
+          <span>Days</span>
+        </div>
+        <div class="col s2 push-s2">
+          <span class="hours bold-text" id="hour"></span> 
+          <br>
+          <span>Hours</span>
+        </div>
+        <div class="col s2 push-s2">
+          <span class="minutes bold-text" id="minute"></span>
+          <br>
+          <span>Minutes</span>
+        </div>
+        <div class="col s2 push-s2">
+          <span class="seconds bold-text" id="second"></span>
+          <br>
+          <span>Seconds</span>
+        </div>
+      </div>
+      <!-- Tessy & Don Main Text -->
+      <div class="container center center-align cursive-text main-border bold-text text-xl z-depth-1 hoverable">
+        <span>Tessy</span>
+        <br>
+        <span>&</span>
+        <br>
+        <span>Don</span>
+      </div>
+      <br> <br>
+      <div>
+        <a href="/story.html" class="btn btn-large purple white-text rounded-edges-x z-depth-5">READ OUR STORY ➡️</a>
+      </div>
+      <!-- Copyright -->
+      <br>
+      <div class="container center-align  center ">
+        <p>Copyright &#169; 2024 NAZA</p>
       </div>
     </div>
- </div>
-
-
-  </main>
-
- <script src="countdown.js"></script>
+  </section>
+  
+   <!-- fab -->
+   <div class="fixed-action-btn">
+    <a class="btn-floating btn-large purple">
+      <i class="large material-icons">favorite</i>
+    </a>
+    <ul>
+      <li><a href="index.html"     class="btn-floating purple"><i class="material-icons">home</i></a>Home</li>
+      <li><a href="story.html"     class="btn-floating purple"><i class="material-icons">headset</i></a>Our Story</li>
+      <li><a href="Gallery.html"   class="btn-floating purple"><i class="material-icons">layers</i></a>Gallery</li>
+      <li><a href="Registery.html" class="btn-floating purple"><i class="material-icons">mode_edit</i></a>Registery</li>
+    </ul>
+  </div>
+  <script src="js/countdown.js"></script>
   <script src="js/jquery.js"></script>
-<script src="js/materialize.js"></script>
-<script>
-     $(document).ready(function(){
-    $('.collapsible').collapsible();
-    $('.materialboxed').materialbox();
-    $('.parallax').parallax();
-    $('.sidenav').sidenav();
-   })
-</script>
+  <script src="js/materialize.js"></script>
+  <script>
+      $(document).ready(function(){
+
+      $('.fixed-action-btn').floatingActionButton();
+      
+    })
+  </script>
 </body>
 </html>
  

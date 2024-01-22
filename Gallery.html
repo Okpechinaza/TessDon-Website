@@ -13,29 +13,39 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap">
   <link rel="icon"  type="image/icon" href="images/1logo.jpg">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+     .cursive-text {
+      font-family: 'Dancing Script', cursive;
+    }
+
+    .text-l {
+      font-size: 3rem;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <!-- fab -->
-    <div class="fixed-action-btn">
-      <a class="btn-floating btn-large purple">
-        <i class="large material-icons">favorite</i>
-      </a>
-      <ul>
-        <li><a href="index.html"     class="btn-floating purple"><i class="material-icons">home</i></a>Home</li>
-        <li><a href="index.html"     class="btn-floating purple"><i class="material-icons">headset</i></a>Our Story</li>
-
-        <li><a href="Gallery.html"   class="btn-floating purple"><i class="material-icons">layers</i></a>Gallery</li>
-        <li><a href="Registery.html" class="btn-floating blue"><i class="material-icons">mode-edit</i></a>Registery</li>
-      </ul>
-    </div>
+   <!-- fab -->
+   <div class="fixed-action-btn">
+    <a class="btn-floating btn-large purple">
+      <i class="large material-icons">favorite</i>
+    </a>
+    <ul>
+      <li><a href="index.html"     class="btn-floating purple"><i class="material-icons">home</i></a>Home</li>
+      <li><a href="story.html"     class="btn-floating purple"><i class="material-icons">headset</i></a>Our Story</li>
+      <li><a href="Gallery.html"   class="btn-floating purple"><i class="material-icons">layers</i></a>Gallery</li>
+      <li><a href="Registery.html" class="btn-floating purple"><i class="material-icons">mode_edit</i></a>Registery</li>
+    </ul>
+  </div>
   </header>
 <main>
+    <br>
+    <h4 class="center cursive-text purple-text text-l">Our Collage</h4>
+    <br>
     <!-- gallery -->
     <section class="gallery">
-      <h4 class="center" style="color:#410364e8;">Our collage</h4>
       <!-- first row -->
       <div class="row">
         <div class="col m3 s12">
@@ -87,23 +97,15 @@
 
 
 <!-- footer -->
-
-  <footer class="page-footer white white-darken-4">
-    <div class="footer-copyright">
+      <br><br>
       <div class="container">
-      <p class="purple-text text-darken-4 center" style="font-size: 15px;"> Copyright &#169;
-         2024 NAZA </p>
+        <p class="purple-text center" style="font-size: 15px;"> Copyright &#169; 2024 NAZA </p>
       </div>
-    </div>
-  </footer>
+
   <script src="js/jquery.js"></script>
   <script src="js/materialize.js"></script>
   <script>
     $(document).ready(function(){
-   $('.collapsible').collapsible();
-   $('.materialboxed').materialbox();
-   $('.parallax').parallax();
-   $('.sidenav').sidenav();
    $('.fixed-action-btn').floatingActionButton();
 
   });

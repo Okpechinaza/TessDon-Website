@@ -1,0 +1,20 @@
+
+#font1{
+  font-family: fantasy;
+  font-size: 15px;
+}
+
+h4{
+  font-family: fantasy, cursive;
+}
+
+span{
+  font-size: 10px;
+  padding-bottom: 0px;
+} 
+
+.image-text{
+  color:#410364e8;
+  font-family: fantasy;
+  font-size: 40px;
+  }
